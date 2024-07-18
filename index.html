@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="parent">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>One</p>
+          </div>
+          <div class="carousel-item">
+            <p>Tow</p>
+          </div>
+          <div class="carousel-item">
+            <p>Three</p>
+          </div>
+          <div class="carousel-item">
+            <p>Four</p>
+          </div>
+        </div>
+        <div class="arrows">
+          <button class="left" onclick="prevSlide()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="right" onclick="nextSlide()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="bullets">
+          <span class="active" onclick="slideShow(0)"></span>
+          <span onclick="slideShow(1)"></span>
+          <span onclick="slideShow(2)"></span>
+          <span onclick="slideShow(3)"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
